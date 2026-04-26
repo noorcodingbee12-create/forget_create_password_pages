@@ -14,6 +14,8 @@ class HorizontalPaddingManager {
   static double p40 = 40.w;
   static double p50 = 50.w;
   static double p60 = 60.w;
+
+  static double p4 = 4.w;
 }
 class PaddingManager {
   PaddingManager._();
@@ -53,4 +55,6 @@ class VerticalPaddingManager {
   static double p100 = 100.h;
   static double p110 = 110.h;
   static double p200 = 200.h;
+
+  static double p14 = 14.h;
 }

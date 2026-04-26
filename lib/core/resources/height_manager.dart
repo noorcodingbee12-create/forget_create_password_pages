@@ -12,6 +12,7 @@ class HeightManager {
   static double h8 = 8.h;
   static double h9 = 9.h;
   static double h10 = 10.h;
+  static double h90 = 90.h;
   static double h11 = 11.h;
   static double h15 = 15.h;
   static double h16 = 16.h;
@@ -53,6 +54,7 @@ class HeightManager {
   static double h24 = 24.h;
   static double h32 = 32.h;
   static double h250 = 250.h;
+  static double h260 = 260.h;
   static double h270 = 270.h;
   static double h5 = 5.h;
   static double h280 = 280.h;
@@ -60,4 +62,20 @@ class HeightManager {
   static double h350 = 350.h;
   static double h400 = 400.h;
   static double h450 = 450.h;
+
+  static double h12 = 12.h;
+  static double h220 = 220.h;
+  static double h59_69 = 59.69.h;
+  static double h272 = 272.h;
+  static double h33 = 33.h;
+  static double h129_52 = 129.52;
+  static double h23 = 23.h;
+
+  static double h135 = 135.h;
+
+  static double h65 = 65.h;
+
+  static double h35 = 35.h;
+
+  static double  h14 = 14.h ;
 }

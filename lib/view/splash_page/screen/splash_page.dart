@@ -8,3 +8,4 @@ class SplashPage extends StatelessWidget {
     return Scaffold();
   }
 }
+

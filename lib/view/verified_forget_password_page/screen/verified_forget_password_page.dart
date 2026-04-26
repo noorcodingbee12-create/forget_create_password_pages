@@ -44,7 +44,7 @@ class _ForgetPasswordState extends State<VerifiedForgetPasswordPage> {
                     },
                     child: Icon(
                       CupertinoIcons.back,
-                      size: 40,
+                      size: 24,
                       color: ColorManager.blackText,
                     ),
                   ),
@@ -100,7 +100,7 @@ class _ForgetPasswordState extends State<VerifiedForgetPasswordPage> {
                   onTap: () {
                     if (_formKey.currentState!.validate()) {
                       Navigator.pushNamed(
-                          context, RoutesName.verifiedForgetPassword.routeName);
+                          context, RoutesName.home.routeName);
                     }
                   },
                   child: Container(

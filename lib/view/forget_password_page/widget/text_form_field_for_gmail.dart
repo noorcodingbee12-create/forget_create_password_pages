@@ -3,7 +3,6 @@ import 'package:medicine_app/core/resources/color_manager.dart';
 import 'package:medicine_app/core/resources/utils.dart';
 import 'package:medicine_app/core/resources/width_manager.dart';
 
-
 class TextFormFieldForGmail extends StatelessWidget {
   const TextFormFieldForGmail({
     super.key,

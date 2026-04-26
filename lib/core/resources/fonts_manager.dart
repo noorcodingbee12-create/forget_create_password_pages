@@ -4,6 +4,7 @@ class FontsManagers{
   FontsManagers._();
   static String interMedium = "inter_medium";
 
+
 }
 
 class FontSizeManagers {
@@ -25,4 +26,6 @@ class FontSizeManagers {
   static double f40 = 40.sp;
   static double f50 = 50.sp;
   static double f100 = 100.sp;
+
+  static double f22 = 22.sp;
 }

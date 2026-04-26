@@ -43,7 +43,7 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                     },
                     child: Icon(
                       CupertinoIcons.back,
-                      size: 40,
+                      size: 24,
                       color: ColorManager.blackText,
                     ),
                   ),
@@ -98,6 +98,7 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
       );
     }
   }
+
 
 
 

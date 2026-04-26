@@ -9,10 +9,13 @@ class ColorManager{
   static const Color backGround2 = Color(0xff84DCEA);
   static const Color backGround1 = Color(0xffEAF6FB);
   static const Color fillColor = Color(0xffF9FAFB);
+  static const Color hintTextGrey = Color(0xffA1A8B0);
+  static const Color lightWhite = Color(0xffF5F7FF);
+  static const Color borderGrey = Color(0xffE8F3F1);
+  static const Color colorOnBoarding = Color(0xffD1D5DB);
+  static const Color scanColor = Color(0xff7EDBD3);
   static const Color lightBlue = Color(0xffF2F8FE);
   static const Color black = Colors.black;
-  static const Color semiLightGray = Color(0xffFBFBFB);
   static const Color semiDarkGray = Color(0xffE8F3F1);
   static const Color likeWhiteBackground = Color(0xffFEFEFE);
-
 }

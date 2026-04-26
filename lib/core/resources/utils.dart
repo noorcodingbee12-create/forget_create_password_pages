@@ -14,7 +14,6 @@ class Utils{
   static const String enterVerificationCode = "Enter Verification Code";
   static const String forgetYourPassword = "Forget Your Password? ";
   static const String messageForForgetPassword = "Enter code that we have sent to your \n number 08528188*** ";
-
   static const String messageForVerifiedForgetPassword = "Enter your email or your phone number \n , we will send you confirmation code";
   static const String verify = "Verify";
   static const String pleaseEnterYourPhoneNumber = "Please enter your phone number";
@@ -23,7 +22,14 @@ class Utils{
   static const String youHaveSuccessfullyResetYourPassword = "You have successfully reset your password.";
   static const String success = "Success";
   static const String email = "Email";
-
+  static const String uploadFromGallery = "Upload from Gallery";
+  static const String tipsForBetterScan = "Tips for better scan:";
+  static const String ensureGoodLighting = "• Ensure good lighting";
+  static const String keepPrescriptionFlat = "• Keep prescription flat";
+  static const String avoidShadowsAndGlare = "• Avoid shadows and glare";
+  static const String captureAllTextClearly = "• Capture all text clearly";
+  static const String takePhoto = "Take Photo";
+  static const String position = "Position your prescription within the frame";
   static const String phone = "Phone";
   static const String sendCodeAgain = "Didn’t receive the code? ";
   static const String resend = "Resend ";
@@ -36,8 +42,11 @@ class Utils{
   static const String confirmPassword = "Confirm Password";
   static const String pleaseEnterAValidConfirmPassword = "Please enter a valid confirm password";
   static const String fullName = "Full Name";
+  static const String getStarted =  "Get Started";
+  static const String continueText = "Continue";
   static const String phoneNumber = "Phone Number";
   static const String password = "Password";
+  static const String skip = "Skip";
   static const String signIn = "Sign In";
   static const String alreadyHaveAnAccount = "Already have an account";
   static const String createAccount = "Create Account";
@@ -63,9 +72,59 @@ static const String messageForCreateNewPassword  = "Create your new password to 
   static const String x100pcs = "100pcs";
   static const String x3pcs = "3pcs";
   static final String $15x99 = "\$15.99";
+    static final String $60_00 = '\$60.00';
+  static String $61_00 = '\$61.00';
+  static final String $01_00 = '\$01.00';
   static const String $7x99 = "\$7.99";
   static const String $5x99 = "\$5.99";
   static final String $10x99Before = "\$10.99";
   static const String $8x99Before = "\$8.99";
   static const String $7x99Before = "\$7.99";
+  static const String onBoardingDes1 = "Explore thousands of \n medicines with detailed \n information and pricing";
+  static const String onBoardingDes2 = "Find medicines quickly \n using our intelligent \n search system";
+  static const String onBoardingDes3 = "Simply scan your \n prescription to order \n medicines instantly";
+  static const String onBoardingDes4 = "Locate nearest \n pharmacies and check \n medicine availability";
+  static String appName = "Medics";
+  static String change = 'Change';
+  static String chatDoctor = 'Chat Doctor';
+  static String paymentSuccess = 'Payment Success';
+  static String paymentSuccessDes = 'Your payment has been successful,\nyou can have a consultation session\nwith your trusted doctor';
+  static String visa = 'VISA';
+  static String booking = 'Booking';
+  static String total = 'Total';
+  static String appointment = 'Appointment';
+  static String paymentMethod = 'Payment Method';
+  static String additionalDiscount = 'Aditional Discount';
+  static String adminFee = 'Admin Fee';
+  static String consultation = 'Consultation';
+  static String paymentDetail = 'Payment Detail';
+  static String chestPain = 'Chest pain';
+  static String reason = 'Reason';
+  static String doctorMarcus = 'Dr. Marcus Horizon';
+  static String doctorCardiologist = 'Cardiologist';
+  static String date = 'Date';
+  static String wednesday = 'Wednesday, Jun 23, 2021 | 10:00 AM';
+  static String bookAppointment = "Book Appointment";
+  static String aboutDrMarcus = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam... Read more";
+  static String about = "About";
+  static const String drMarcusHorizon = "Dr. Marcus Horizon";
+  static var cardiologist = "Cardiologist";
+  static String details = 'Details';
+  static const String yourRecentDoctors = "Your Recent Doctors";
+  static const String recommendedDoctors = "Recommended Doctors";
+  static const String category = "Category";
+  static const String findDoctor ="Find a doctors";
+  static const String drMarcus = "Dr. Marcus";
+  static const String drMaria = "Dr. Maria";
+  static const String drStevi = "Dr. Stevi";
+  static const String drLuke = "Dr. Luke";
+  static const String general = "General";
+  static const String psychiatrist = "Psychiatrist";
+  static const String lungs = "Lungs";
+  static const String dentist = "Dentist";
+  static const String covid = "Covid-19";
+  static const String surgeon = "Surgeon";
+
+
+
 }

@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_screenutil: ^5.9.3
   awesome_dialog: ^3.3.0
+  dots_indicator: ^4.0.1
+  flutter_native_splash: ^2.4.7
+  font_awesome_flutter: ^11.0.0
 
 dev_dependencies:
   flutter_test:

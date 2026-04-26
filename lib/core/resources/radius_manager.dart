@@ -6,6 +6,7 @@ class RadiusValuesManager {
   static double r10 = 10.r;
   static double r11 = 11.r;
   static double r12 = 12.r;
+  static double r16 = 16.r;
   static double r14 = 14.r;
   static double r15 = 15.r;
   static double r20 = 20.r;
@@ -23,4 +24,8 @@ class RadiusValuesManager {
   static double r200 = 200.r;
   static double r300 = 300.r;
   static double r400 = 400.r;
+
+  static double r24 = 24.r;
+
+  static double r5 = 5.r;
 }

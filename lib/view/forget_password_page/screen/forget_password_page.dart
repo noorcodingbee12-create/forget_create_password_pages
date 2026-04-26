@@ -40,7 +40,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                   onTap: () => Navigator.pop(context),
                   child: Icon(
                     CupertinoIcons.back,
-                    size: 40,
+                    size: 24,
                     color: ColorManager.blackText,
                   ),
                 ),

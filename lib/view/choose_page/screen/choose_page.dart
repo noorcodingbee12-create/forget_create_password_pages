@@ -28,7 +28,7 @@ class ChoosePage extends StatelessWidget {
             Image.asset(AssetsValuesManager.logo,),
             ContinueAsWidget(title: Utils.continueAsUser, description: Utils.browseAndOrderMedicines, icon: Icons.people,onTap: () {
               //todo page to login in user
-              AppNavigation.pushNamed(context , RoutesName.home);
+              AppNavigation.pushNamed(context , routesName: RoutesName.home);
             },),
             SizedBox(height: HeightManager.h20),
             ContinueAsWidget(title: Utils.continueAsPharmacy, description: Utils.manageYourPharmacy, icon: Icons.apartment,onTap: () {
