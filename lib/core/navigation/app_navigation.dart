@@ -4,24 +4,24 @@ import 'package:medicine_app/core/resources/route_manager.dart';
 class AppNavigation {
   AppNavigation._();
 
-  static Future<Object?> pushNamed(
-      BuildContext context, {
-        required RoutesName routesName,
+  static Future<Object?> pushReplacementNamed(
+      BuildContext context,
+      RoutesName routesName, {
         Object? args,
-      }) {
-    return Navigator.pushNamed(
+      }) async {
+    return await Navigator.pushReplacementNamed(
       context,
       routesName.routeName,
       arguments: args,
     );
   }
 
-  static Future<Object?> pushReplacementNamed(
-      BuildContext context, {
-        required RoutesName routesName,
+  static Future<Object?> pushNamed(
+      BuildContext context,
+      RoutesName routesName, {
         Object? args,
-      }) {
-    return Navigator.pushReplacementNamed(
+      }) async {
+    return await Navigator.pushNamed(
       context,
       routesName.routeName,
       arguments: args,
@@ -29,20 +29,15 @@ class AppNavigation {
   }
 
   static Future<Object?> pushAndRemoveUntil(
-      BuildContext context, {
-        required RoutesName routesName,
+      BuildContext context,
+      RoutesName routesName, {
         Object? args,
-      }) {
-    return Navigator.pushNamedAndRemoveUntil(
+      }) async {
+    return await Navigator.pushNamedAndRemoveUntil(
       context,
       routesName.routeName,
           (route) => false,
       arguments: args,
     );
-  }
-
-
-  static void pop(BuildContext context) {
-    Navigator.pop(context);
   }
 }

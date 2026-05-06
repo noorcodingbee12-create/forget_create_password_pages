@@ -3,19 +3,20 @@ import 'package:medicine_app/core/widget/unknown_route_page.dart';
 import 'package:medicine_app/view/cart_page/screen/my_cart_page.dart';
 import 'package:medicine_app/view/choose_page/screen/choose_page.dart';
 import 'package:medicine_app/view/create_new_password_page/screen/create_new_password_page.dart';
-import 'package:medicine_app/view/doctor_consultation/screen/appointment_page.dart';
-import 'package:medicine_app/view/doctor_consultation/screen/doctor_details_page.dart';
-import 'package:medicine_app/view/doctor_consultation/screen/find_doctor_page.dart';
+import 'package:medicine_app/view/doctor_consultation_page/screen/appointment_page.dart';
+import 'package:medicine_app/view/doctor_consultation_page/screen/doctor_details_page.dart';
+import 'package:medicine_app/view/doctor_consultation_page/screen/find_doctor_page.dart';
 import 'package:medicine_app/view/forget_password_page/screen/forget_password_page.dart';
-import 'package:medicine_app/view/home_page/screen/home_page.dart';
+import 'package:medicine_app/view/home_page/screen/pharmacy_home_page.dart';
+import 'package:medicine_app/view/location_page/screen/location_page.dart';
+import 'package:medicine_app/view/login_intro_page/screen/login_intro_page.dart';
 import 'package:medicine_app/view/login_page/screen/login_page.dart';
 import 'package:medicine_app/view/on_boarding_page/screen/on_boarding_page.dart';
-import 'package:medicine_app/view/pharmacy_dashboard/screen/pharmacy_dashboard_page.dart';
+import 'package:medicine_app/view/pharmacy_dashboard_page/screen/pharmacy_dashboard_page.dart';
 import 'package:medicine_app/view/scan_page/screen/scan_qr_page.dart';
 import 'package:medicine_app/view/sing_up_page/screen/sign_up_page.dart';
 import 'package:medicine_app/view/splash_page/screen/splash_page.dart';
 import 'package:medicine_app/view/verified_forget_password_page/screen/verified_forget_password_page.dart';
-import 'package:medicine_app/view/welcome_page/screen/welcome_page.dart';
 
 class RoutesManager {
   RoutesManager._();
@@ -27,8 +28,8 @@ class RoutesManager {
       page = const SplashPage();
     } else if (settings.name == RoutesName.onBoarding.routeName) {
       page = const OnBoardingPage();
-    } else if (settings.name == RoutesName.welcome.routeName) {
-      page = const WelcomePage();
+    } else if (settings.name == RoutesName.loginIntro.routeName) {
+      page = const LoginIntroPage();
     } else if (settings.name == RoutesName.login.routeName) {
       page = const LoginPage();
     } else if (settings.name == RoutesName.signUp.routeName) {
@@ -42,7 +43,7 @@ class RoutesManager {
     } else if (settings.name == RoutesName.choose.routeName) {
       page = const ChoosePage();
     } else if (settings.name == RoutesName.home.routeName) {
-      page = const HomePage();
+      page = const PharmacyHomePage();
     } else if (settings.name == RoutesName.findDoctor.routeName) {
       page = FindDoctorPage();
     } else if (settings.name == RoutesName.doctorDetails.routeName) {
@@ -55,6 +56,8 @@ class RoutesManager {
       page = const ScanQrPage();
     } else if (settings.name == RoutesName.cart.routeName) {
       page = const MyCartPage();
+    }else if (settings.name == RoutesName.locationPage.routeName) {
+      page = const LocationPage();
     } else {
       page = const UnknownRoutePage();
     }
@@ -69,7 +72,7 @@ class RoutesManager {
 enum RoutesName {
   splash("/"),
   onBoarding("/onboardingPage"),
-  welcome("/welcomePage"),
+  loginIntro("/welcomePage"),
   login("/loginPage"),
   signUp("/signUpPage"),
   createNewPassword("/createPasswordNewPage"),
@@ -77,18 +80,21 @@ enum RoutesName {
   verifiedForgetPassword("/verifiedForgetPasswordPage"),
   choose("/choosePage"),
   home("/homePage"),
-
+  detailsPage("/ detailsPage"),
   // Doctor
   findDoctor("/findDoctorPage"),
-  doctorDetails("/doctorDetailsPage"),
+  topDoctor("/topDoctorPage"),
   appointment("/appointmentPage"),
-
   // Pharmacy
   pharmacyDashboard("/pharmacyDashboardPage"),
   scan("/scanQrPage"),
-
+  doctorDetails("/doctorDetailsPage"),
   // Cart
-  cart("/cartPage");
+  cart("/cartPage"),
+  locationPage ("/locationPage"),
+  // Profile
+  profile("/profilePage");
+
 
   final String routeName;
   const RoutesName(this.routeName);

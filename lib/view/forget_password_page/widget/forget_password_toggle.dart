@@ -50,7 +50,7 @@ class ForgetPasswordToggle extends StatelessWidget {
                     style: TextStyle(
                       color: isEmailSelected
                           ? ColorManager.primary
-                          : ColorManager.grey,
+                          : ColorManager.grey2,
                       fontWeight: FontWeight.w600,
                       fontSize: FontSizeManagers.f14,
                     ),
@@ -85,7 +85,7 @@ class ForgetPasswordToggle extends StatelessWidget {
                     style: TextStyle(
                       color: !isEmailSelected
                           ? ColorManager.primary
-                          : ColorManager.grey,
+                          : ColorManager.grey2,
                       fontWeight: FontWeight.w600,
                       fontSize: FontSizeManagers.f14,
                     ),

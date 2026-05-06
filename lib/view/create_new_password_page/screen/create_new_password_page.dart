@@ -67,7 +67,7 @@ class _CreateNewPasswordPageState extends State<CreateNewPasswordPage> {
                 Text(
                   Utils.messageForCreateNewPassword,
                   style: TextStyle(
-                    color: ColorManager.grey,
+                    color: ColorManager.grey2,
                     fontSize: FontSizeManagers.f16,
                     fontWeight: FontWeight.w400,
                   ),

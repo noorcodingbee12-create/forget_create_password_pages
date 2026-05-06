@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
 
 class MedicalItem {
   final String title;
-  final IconData icon;
+  final dynamic icon;
 
   MedicalItem({
     required this.title,

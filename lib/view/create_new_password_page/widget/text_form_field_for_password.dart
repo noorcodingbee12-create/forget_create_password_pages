@@ -45,7 +45,7 @@ class _TextFormFieldForPasswordState extends State<TextFormFieldForPassword> {
             _obscureText
                 ? Icons.visibility_off_outlined
                 : Icons.visibility_outlined,
-            color: ColorManager.grey,
+            color: ColorManager.grey2,
           ),
           onPressed: () {
             setState(() {

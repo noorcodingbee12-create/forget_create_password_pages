@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicine_app/core/navigation/app_navigation.dart';
 import 'package:medicine_app/core/resources/color_manager.dart';
 import 'package:medicine_app/core/resources/fonts_manager.dart';
 import 'package:medicine_app/core/resources/height_manager.dart';
@@ -9,9 +10,8 @@ import 'package:medicine_app/model/popular_products_model.dart';
 import 'package:medicine_app/core/resources/padding_manager.dart';
 
 class ListViewDesignOfPopularMedicines extends StatelessWidget {
-  const ListViewDesignOfPopularMedicines({
-    super.key, required this.model,
-  });
+  const ListViewDesignOfPopularMedicines({super.key, required this.model});
+
   final PopularProductsModel model;
 
   @override
@@ -20,10 +20,7 @@ class ListViewDesignOfPopularMedicines extends StatelessWidget {
       height: HeightManager.h230,
       width: WidthManagers.w171,
       decoration: BoxDecoration(
-        border: Border.all(
-          color: ColorManager.semiDarkGray,
-          width: 2,
-        ),
+        border: Border.all(color: ColorManager.semiDarkGray, width: 2),
         borderRadius: BorderRadius.circular(RadiusValuesManager.r15),
       ),
       child: Padding(
@@ -31,28 +28,64 @@ class ListViewDesignOfPopularMedicines extends StatelessWidget {
           horizontal: HorizontalPaddingManager.p8,
           vertical: VerticalPaddingManager.p10,
         ),
-        child: Column(
+        child: InkWell(
+          onTap: () {
+            AppNavigation.pushNamed(context, model.route, args: model);
+          },
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Align(
-                  alignment: Alignment.center,
-                  child: Image.asset(model.medicineImage,height: HeightManager.h100,)),
-              SizedBox(height: HeightManager.h20,),
-              Text(model.medicineName,style: TextStyle(color: ColorManager.black,fontSize: FontSizeManagers.f16,fontWeight: FontWeight.bold),),
-              Text(model.medicinePieces,style: TextStyle(color: ColorManager.grey,fontSize: FontSizeManagers.f14,fontWeight: FontWeight.bold),),
-              SizedBox(height: HeightManager.h20,),
+                alignment: Alignment.center,
+                child: Image.asset(
+                  model.medicineImage,
+                  height: HeightManager.h100,
+                ),
+              ),
+              SizedBox(height: HeightManager.h20),
+              Text(
+                model.medicineName,
+                style: TextStyle(
+                  color: ColorManager.black,
+                  fontSize: FontSizeManagers.f16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                model.medicinePieces,
+                style: TextStyle(
+                  color: ColorManager.grey,
+                  fontSize: FontSizeManagers.f14,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: HeightManager.h20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(model.medicinePrice,style: TextStyle(color: ColorManager.primary,fontSize: FontSizeManagers.f18,fontWeight: FontWeight.bold),),
+                  Text(
+                    model.medicinePrice,
+                    style: TextStyle(
+                      color: ColorManager.primary,
+                      fontSize: FontSizeManagers.f18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   InkWell(
-                      onTap: () {
-                        //todo cart page
-                      },
-                      child: Icon(Icons.add_box_rounded,color: ColorManager.primary,size: IconSizeManager.i25,))
+                    onTap: () {
+                      //todo cart page
+                    },
+                    child: Icon(
+                      Icons.add_box_rounded,
+                      color: ColorManager.primary,
+                      size: IconSizeManager.i25,
+                    ),
+                  ),
                 ],
-              )
-            ]),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

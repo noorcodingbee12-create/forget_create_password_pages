@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medicine_app/core/navigation/app_navigation.dart';
 import 'package:medicine_app/core/resources/color_manager.dart';
 import 'package:medicine_app/core/resources/fonts_manager.dart';
 import 'package:medicine_app/core/resources/height_manager.dart';
@@ -17,19 +18,25 @@ class CategoriesBoxDesign extends StatelessWidget {
       children: [
         Padding(
           padding:EdgeInsets.symmetric(horizontal: PaddingManager.p5),
-          child: Container(
-            alignment: Alignment.center,
-            width: WidthManagers.w65,
-            height: HeightManager.h60,
-            decoration: BoxDecoration(
-                color: ColorManager.white,
-                borderRadius: BorderRadius.circular(RadiusValuesManager.r15),
-                border: Border.all(
-                    color: ColorManager.semiDarkGray
-                )
+          child: InkWell(
+            onTap: () {
 
+              AppNavigation.pushNamed(context, model.route);
+            },
+            child: Container(
+              alignment: Alignment.center,
+              width: WidthManagers.w65,
+              height: HeightManager.h60,
+              decoration: BoxDecoration(
+                  color: ColorManager.white,
+                  borderRadius: BorderRadius.circular(RadiusValuesManager.r15),
+                  border: Border.all(
+                      color: ColorManager.semiDarkGray
+                  )
+
+              ),
+              child: Icon(model.icon,size: FontSizeManagers.f25,color: ColorManager.primary,),
             ),
-            child: Icon(model.icon,size: FontSizeManagers.f25,color: ColorManager.primary,),
           ),
         ),
         SizedBox(height: HeightManager.h7,),

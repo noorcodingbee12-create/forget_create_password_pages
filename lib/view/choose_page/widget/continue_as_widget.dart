@@ -63,7 +63,7 @@ class ContinueAsWidget extends StatelessWidget {
                   SizedBox(height: HeightManager.h7),
                   Text(
                     description,
-                    style: TextStyle(color: ColorManager.grey,fontSize: FontSizeManagers.f10,fontWeight: FontWeight.bold),
+                    style: TextStyle(color: ColorManager.grey2,fontSize: FontSizeManagers.f10,fontWeight: FontWeight.bold),
                   ),
                 ],
               ),

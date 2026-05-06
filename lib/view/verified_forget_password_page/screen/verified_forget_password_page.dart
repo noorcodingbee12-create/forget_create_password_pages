@@ -68,7 +68,7 @@ class _ForgetPasswordState extends State<VerifiedForgetPasswordPage> {
                 Text(
                   Utils.messageForVerifiedForgetPassword,
                   style: TextStyle(
-                    color: ColorManager.grey,
+                    color: ColorManager.grey2,
                     fontSize: FontSizeManagers.f15,
                   ),
                 ),
@@ -132,7 +132,7 @@ class _ForgetPasswordState extends State<VerifiedForgetPasswordPage> {
                     Text(
                       Utils.sendCodeAgain,
                       style: TextStyle(
-                        color: ColorManager.grey,
+                        color: ColorManager.grey2,
                         fontSize: FontSizeManagers.f14,
                         fontWeight: FontWeight.w500,
                       ),

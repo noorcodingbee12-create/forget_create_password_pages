@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: RoutesManager.onGenerateRoute,
-        initialRoute: RoutesName.createNewPassword.routeName,
+        initialRoute: RoutesName.splash.routeName,
       ),
     );
   }

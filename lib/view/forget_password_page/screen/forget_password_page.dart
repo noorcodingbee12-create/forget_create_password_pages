@@ -63,7 +63,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                 Text(
                   Utils.messageForForgetPassword,
                   style: TextStyle(
-                    color: ColorManager.grey,
+                    color: ColorManager.grey2,
                     fontSize: FontSizeManagers.f16,
                     fontWeight: FontWeight.w400,
                   ),

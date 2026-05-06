@@ -17,7 +17,7 @@ class TextFieldSearchHomePage extends StatelessWidget {
         width: WidthManagers.w350,
         child: TextField(
           decoration: InputDecoration(
-            fillColor: ColorManager.borderGrey,
+            fillColor: ColorManager.semiLightGray,
             filled: true,
             hintText: Utils.search,
             hintStyle: TextStyle(color: ColorManager.grey),

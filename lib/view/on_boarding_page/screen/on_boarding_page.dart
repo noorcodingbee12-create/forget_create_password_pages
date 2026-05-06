@@ -1,12 +1,90 @@
+import 'package:medicine_app/view/on_boarding_page/widget/buttom_section.dart';
+import 'package:medicine_app/view/on_boarding_page/widget/onboarding_item.dart';
+import 'package:medicine_app/view/on_boarding_page/widget/skip_button.dart';
 import 'package:flutter/material.dart';
+import 'package:medicine_app/controller/onboarding_controller.dart';
+import 'package:medicine_app/core/resources/assets_values_manager.dart';
+import 'package:medicine_app/core/resources/height_manager.dart';
+import 'package:medicine_app/core/resources/utils.dart';
 
-class OnBoardingPage extends StatelessWidget {
+
+class OnboardingModel {
+  final String image;
+  final String text;
+
+  OnboardingModel({required this.image, required this.text});
+}
+
+class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold();
-  }
+  State<OnBoardingPage> createState() => _OnBoardingPageState();
 }
 
+class _OnBoardingPageState extends State<OnBoardingPage> {
+  final controller = OnboardingController();
+  int currentIndex = 0;
 
+  final List<OnboardingModel> pages = [
+    OnboardingModel(image: AssetsValuesManager.onBoarding1, text: Utils.onboarding1),
+    OnboardingModel(image: AssetsValuesManager.onBoarding2, text: Utils.onboarding2),
+    OnboardingModel(image: AssetsValuesManager.onBoarding3, text: Utils.onboarding3),
+    OnboardingModel(image: AssetsValuesManager.onBoarding4, text: Utils.onboarding4),
+  ];
+
+  @override
+  void dispose() {
+    controller.pageController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+
+          SizedBox(height: HeightManager.h40),
+
+          SkipButton(
+            onTap: () => controller.skip(context),
+          ),
+
+          Expanded(
+            child: PageView.builder(
+              controller: controller.pageController,
+              itemCount: pages.length,
+              onPageChanged: (index) {
+                setState(() {
+                  currentIndex = index;
+                });
+              },
+              itemBuilder: (context, index) {
+                final page = pages[index];
+                return OnboardingItem(
+                  image: page.image,
+                  text: page.text,
+                );
+              },
+            ),
+          ),
+
+          BottomNavigationSection(
+            controller: controller.pageController,
+            count: pages.length,
+            onNext: () {
+              controller.nextPage(
+                context,
+                currentIndex,
+                pages.length - 1,
+              );
+            },
+          ),
+
+           SizedBox(height: HeightManager.h30),
+        ],
+      ),
+    );
+  }
+}
